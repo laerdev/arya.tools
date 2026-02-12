@@ -309,7 +309,7 @@ button:disabled {
   flex: none;
   transition: all 0.2s ease;
 }
-.main-btn:active, .clear-btn:active {
+.main-btn:active, .clear-btn:active, .copy-btn:active {
   transform: translateY(4px);
   box-shadow: none;
 }

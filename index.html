@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Arya Tools 🐱</title>
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="language-wrapper">
+		<div class="language-note" data-i18n="languageNote"></div>
+		<div class="language-selector">
+			<button id="btn-es" class="lang-btn">ES</button>
+			<button id="btn-en" class="lang-btn">EN</button>
+		</div>
+	</div>
+	<div class="card">
+		<h1>Arya Tools</h1>
+		<div class="selectors-inline">
+			<div class="tone-section">
+				<label data-i18n="labelTone"></label>
+				<div class="tone-selector">
+					<label class="tone-option"><input type="radio" name="tone" value="Very professional, corporate, and polite." checked><span class="tone-card" data-i18n="tone1"></span></label>
+					<label class="tone-option"><input type="radio" name="tone" value="Extremely kind, sweet, and empathetic"><span class="tone-card" data-i18n="tone2"></span></label>
+					<label class="tone-option"><input type="radio" name="tone" value="Concise, direct and straightforward"><span class="tone-card" data-i18n="tone3"></span></label>
+					<label class="tone-option"><input type="radio" name="tone" value="Ironic, acerbic, and with elegant mockery"><span class="tone-card" data-i18n="tone4"></span></label>
+				</div>
+			</div>
+			<div class="spicy-section">
+				<label>
+					<span data-i18n="labelSpicy"></span> <span class="info-trigger" id="spicy-tooltip">?</span> </label>
+				<div class="spicy-selector">
+					<input type="radio" name="spicy" value="0" id="s0" checked><label for="s0" class="chili">🌿</label>
+					<input type="radio" name="spicy" value="1" id="s1"><label for="s1" class="chili">🌶️</label>
+					<input type="radio" name="spicy" value="2" id="s2"><label for="s2" class="chili">🌶️🌶️</label>
+					<input type="radio" name="spicy" value="3" id="s3"><label for="s3" class="chili">🌶️🌶️🌶️</label>
+				</div>
+			</div>
+		</div>
+		<label data-i18n="labelText"></label>
+		<div class="textarea-container">
+			<textarea id="inputText"></textarea>
+		</div>
+		<div class="action-buttons">
+			<button id="ui-btn-main" class="main-btn" data-i18n="btnMain"></button>
+			<button class="clear-btn" id="btnClear">
+				<svg viewBox="0 0 24 24" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+					<path fill="currentColor" d="M12,5V2L8,6L12,10V7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12H5A7,7 0 0,0 12,19A7,7 0 0,0 19,12A7,7 0 0,0 12,5Z" />
+				</svg>
+			</button>
+		</div>
+		<div id="output-container">
+			<label data-i18n="labelResult"></label>
+			<div id="output"></div>
+			<button id="btnCopy" data-i18n="btnCopy" class="copy-btn"></button>
+		</div>
+		<div class="note" data-i18n="note"></div>
+	</div>
+	<div id="customAlert">
+		<div class="modal">
+			<div style="font-size: 4rem;">💡</div>
+			<p id="alertMessage" style="font-weight: 800; font-size: 1.2rem;"></p>
+			<button id="ui-btn-alert" data-i18n="alertBtn" style="font-size: 1.1rem; padding: 10px;"></button>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
